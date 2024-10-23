@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from studybuddy.cloudonex.com/app/add-task?id=9 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:50:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="manifest" href="../assets/site.html">
+    <link rel="mask-icon" href="../assets/safari-pinned-tab.svg" color="#5bbad5">
+
+            <link rel="shortcut icon" href="../assets/favicon.ico">
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="CloudOnex">
+    <meta name="application-name" content="CloudOnex">
+
+    
+            <title>To-dos | CloudOnex</title>
+    
+    <script>
+        window.csrf_token = 'OGpnEwoPy9Hl7sJ6V1M8Kle90vybbI0Jd1AwoPkv';
+        window.base_url = '../index.html';
+        window.app = {
+            i18n: {
+                'yes': 'Yes',
+                'no': 'No',
+                'are_you_sure': 'Are you sure?',
+                'loading': 'Loading',
+                'copied': 'Copied',
+            },
+        }
+    </script>
+
+    <link rel="stylesheet" href="../assets/build/app.minc8c4.css?v=1.3.1">
+    <script type="module" src="../assets/build/app.minc8c4.js?v=1.3.1"></script>
+    <link rel="stylesheet" href="../assets/css/dark-sidebarc8c4.css?v=1.3.1">
+
+    <link rel="stylesheet" href="../assets/css/stylec8c4.css?v=1.3.1">
+
+            <link rel="stylesheet" href="../assets/lib/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/lib/select2/css/select2.css">
+
+</head>
+<body id="app_body">
+
+
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand">
+
+                    <a href="dashboard.html" class="app-brand-link">
+              <span class="app-brand-logo mt-3">
+                                        <img src="../uploads/system/backend-logo7b30.png?v=4"
+                           alt="CloudOnex" class="max-height-35 py-1 my-1">
+                                </span>
+                    </a>
+
+
+                    <a href="#" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bi bi-chevron-left align-middle"></i>
+                    </a>
+                </div>
+
+
+                <div class="menu-inner-shadow"></div>
+
+
+                <ul class="menu-inner py-1 mt-3">
+
+
+                    <li class="menu-item ">
+                        <a href="dashboard.html" class="menu-link">
+                            <i class="menu-icon bi bi-house-fill"></i> Dashboard
+                        </a>
+                    </li>
+
+
+                                            <li class="menu-item  active ">
+                            <a href="todos.html" class="menu-link">
+                                <i class="text-info menu-icon bi bi-list-check"></i> To-dos
+                            </a>
+                        </li>
+                    
+
+                                            <li class="menu-item ">
+                            <a href="studygoals.html" class="menu-link">
+                                <i class="text-primary menu-icon bi bi-gem"></i> Study Goals
+                            </a>
+                        </li>
+                    
+                                            <li class="menu-item ">
+                            <a href="assignments.html" class="menu-link">
+                                <i class="text-success menu-icon bi bi-box-seam-fill"></i> Assignments
+                            </a>
+                        </li>
+                    
+                                            <li class="menu-item ">
+                            <a href="calendar.html" class="menu-link">
+                                <i class="text-warning menu-icon bi bi-calendar-week-fill"></i> Calendar
+                            </a>
+                        </li>
+                    
+
+                                            <li class="menu-item ">
+                            <a href="ai-chat.html" class="menu-link">
+                                <i class="text-white menu-icon bi bi-chat-dots-fill"></i> AI Tutor
+                            </a>
+                        </li>
+                    
+
+
+                    <!-- Layouts -->
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">MY Desk</span>
+                    </li>
+
+
+                    
+                        <li class="menu-item ">
+                            <a href="documents.html" class="menu-link">
+                                <i class="menu-icon bi bi-file-earmark-word-fill"></i> Notes
+                            </a>
+                        </li>
+
+                    
+
+
+                                            <li class="menu-item ">
+                            <a href="flashcards.html" class="menu-link">
+                                <i class="menu-icon bi bi-grid-3x3-gap"></i> Flashcards
+                            </a>
+                        </li>
+                    
+
+                                            <li class="menu-item ">
+                            <a href="spreadsheets.html" class="menu-link">
+                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Sheets
+                            </a>
+                        </li>
+                    
+                                            <li class="menu-item ">
+                            <a href="digital-assets.html" class="menu-link">
+                                <i class="menu-icon bi bi-hdd-fill"></i> Resources
+                            </a>
+                        </li>
+                    
+
+                    <li class="menu-item ">
+                        <a href="address-book.html" class="menu-link">
+                            <i class="menu-icon bi bi-person-badge"></i> Contacts
+                        </a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon bi bi-share-fill"></i> Share
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item ">
+                                <a href="quick-share21fe.html?tab=new"
+                                   class="menu-link">New Share</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="quick-share1cb2.html?tab=shares"
+                                   class="menu-link">Shares</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="quick-share2649.html?tab=access_logs"
+                                   class="menu-link">Access Logs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Setup</span>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon bi bi-gear-wide-connected"></i> Settings
+                        </a>
+                        <ul class="menu-sub">
+
+                            <li class="menu-item ">
+                                <a href="settingsd6d6.html?tab=users" class="menu-link">Users</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="settings36ad.html?tab=api" class="menu-link">API</a>
+                            </li>
+
+
+                                                            <li class="menu-item ">
+                                    <a href="billing.html" class="menu-link">Billing</a>
+                                </li>
+                            
+                            
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+
+                <nav
+                        class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                        id="layout-navbar"
+                >
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <!-- Search -->
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <h5 class="fw-bold mb-0">
+                                                                            To-dos
+                                    
+                                </h5>
+                            </div>
+                        </div>
+                        <!-- /Search -->
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <li class="nav-item lh-1 me-3">
+                                <button id="btnTimer" class="btn rounded-pill btn-dark">
+                                                                            <i class="bi bi-pause-fill"></i> <span id="timer_count"></span>
+                                                                    </button>
+                            </li>
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                   data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <span class="app-avatar-text">LP</span>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <span class="app-avatar-text">LP</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Liam P</span>
+                                                    <small class="text-muted">demo@example.com</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="user/me.html">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                           href="settings99d1.html?tab=general">Settings</a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+
+                                                                            <li>
+                                            <a class="dropdown-item"
+                                               href="../super-admin/dashboard.html">Go to Super Admin</a>
+                                        </li>
+                                        <li>
+                                            <div class="dropdown-divider"></div>
+                                        </li>
+                                    
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">Logout</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+
+                        
+                        
+                        <div id="liveAlertPlaceholder"></div>
+
+                        
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="text-dark fw-bolder">Add To-dos</h4>
+        <div>
+            <a href="todos.html" type="submit" class="btn btn-dark float-end">Go to List</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="https://studybuddy.cloudonex.com/app/save-todos" method="post" id="save-todo" data-form="redirect"
+                          data-btn-id="btn-save-todo">
+                        
+                        <div class="form-group">
+                            <label for="example-date-input"
+                                   class="form-control-label form-label">Deadline</label>
+                            <input class="form-control" name="date" value="2024-10-19" id="date">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="example-text-input"
+                                   class="form-control-label form-label">Task</label><span
+                                    class="text-danger">*</span>
+                            <input class="form-control" name="title" type="text" id="title"
+                                    value="Implement real-time monitoring and logging for system health.">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="example-text-input" class="form-label">
+                                Priority
+                            </label><span class="text-danger">*</span>
+                            <select class="form-select" aria-label="Default select example" name="status">
+                                <option value="High"
+                                         selected >High</option>
+                                <option value="Medium"
+                                        >Medium</option>
+                                <option value="Low"
+                                        >Low</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="exampleFormControlTextarea1"
+                                   class="form-label">Description</label><span class="text-danger">*</span>
+                            <textarea class="form-control" name="description" id="description"
+                                      rows="3"> Write 5 blog posts for Techhub about entrepreneurship.  </textarea>
+                        </div>
+                        <input type="hidden" name="_token" value="OGpnEwoPy9Hl7sJ6V1M8Kle90vybbI0Jd1AwoPkv">                                                    <input type="hidden" name="object_id" value="9">
+                                                <button type="submit" class="btn btn-dark" id="btn-save-todo">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card">
+                <div class="card-header p-3">
+                    <h4 class="mb-0 text-dark">To-do list</h4>
+                    <hr class="horizontal dark mb-0">
+                </div>
+                <div class="card-body p-3 pt-0">
+                    <ul class="list-group list-group-flush" data-toggle="checklist">
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="19" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Collect and analyze user feedback for continuous improvement.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexa9bc.html?id=19" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Dec 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="18" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Continuously evaluate and enhance the user experience.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexe371.html?id=18" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Jan 2024
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="17" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Write 5 blog posts for Techhub</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index190a.html?id=17" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                03 Mar 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="16"  checked >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Implement a feedback loop for continuous learning and improvement.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index2728.html?id=16" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                21 Jul 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="15" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Plan for regular updates and feature enhancements based on user needs.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index7429.html?id=15" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                12 Oct 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="14" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Conduct A/B testing to optimize user interfaces and features.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index87f1.html?id=14" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                11 Dec 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="13" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Conduct regular security audits and implement necessary updates.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index6e03.html?id=13" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                23 Feb 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="12" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Explore opportunities for expanding the AI product into new markets.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index4ef9.html?id=12" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                13 Aug 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="11" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Establish partnerships with industry influencers or collaborators.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index0055.html?id=11" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Oct 2024
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="10" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Develop a marketing strategy to promote the AI product.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexf41b.html?id=10" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Oct 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="9" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Implement real-time monitoring and logging for system health.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index5255.html?id=9" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                09 Apr 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="8" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Develop a robust backend infrastructure to support the AI product</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexc3c9.html?id=8" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                01 Aug 2025
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="7" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Optimize the AI model for efficiency and resource utilization</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index8803.html?id=7" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                03 Feb 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="6" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Test the AI model for accuracy, performance, and scalability</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index3a9f.html?id=6" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Dec 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="5" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Build and train the AI model using appropriate algorithms</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexd61c.html?id=5" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                09 Apr 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="4"  checked >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Implement data collection and storage mechanisms.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexdcfd.html?id=4" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Dec 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="3"  checked >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Gather requirements from stakeholders and end-users.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/indexd708.html?id=3" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                23 Sep 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="2"  checked >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Create a detailed project plan outlining tasks and timelines.</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index0b30.html?id=2" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                09 Apr 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                                    <li class="list-group-item border-0 flex-column align-items-start ps-0 py-0 mb-3">
+                                <div class="checklist-item checklist-item-primary ps-2 ms-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input todo_checkbox" type="checkbox"
+                                                   data-id="1" >
+                                        </div>
+                                        <h6 class="mb-0 text-dark font-weight-bold text-sm">Write 5 blog posts for Techhub</h6>
+                                        <div class="dropdown float-lg-end ms-auto pe-4">
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <a href="add-task/index681a.html?id=1" type="button"
+                                                   class="btn btn-icon btn-sm btn_copy_prompt btn-primary"><i
+                                                            class="bi bi-pencil"></i></a>
+
+                                                <a href="login.html" type="button" data-delete-item="true" class=" btn-sm btn btn-icon btn-danger btn_edit_prompt"><i
+                                                            class="bi bi-trash"></i></a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-4 mt-3 ps-1">
+                                        <div>
+                                            <span class="text-xs font-weight-bolder">
+                                                31 Dec 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="horizontal dark mt-4 mb-0">
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+
+
+                                            <footer class="content-footer footer bg-footer-theme">
+                            <div class="container-xxl py-2">
+                                <div class="text-center">
+                                    © 2024 <a href="../index.html"
+                                                       class="footer-link">CloudOnex</a>
+                                    | Version: 1.3.1
+                                </div>
+                            </div>
+                        </footer>
+                    
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
+
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+
+
+<div class="modal" tabindex="-1" id="app-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="app-modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="app-modal-content"></div>
+        </div>
+    </div>
+</div>
+        <script src="../assets/lib/flatpickr/flatpickr.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+            document.addEventListener('DOMContentLoaded', () => {
+                flatpickr("#date", {
+
+                    dateFormat: "Y-m-d",
+                });
+            });
+        })();
+    </script>
+    <script>
+        (function () {
+            "use strict";
+            document.addEventListener('DOMContentLoaded', () => {
+
+                // Get all elements with class 'todo_checkbox'
+                let checkboxes = document.querySelectorAll('.todo_checkbox');
+
+// Add event listener to each checkbox
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', function () {
+                        // Prepare data based on checkbox status
+                        let data = {
+                            id: this.getAttribute('data-id'),
+                            status: this.checked ? 'Completed' : 'Not Completed',
+                            _token: 'OGpnEwoPy9Hl7sJ6V1M8Kle90vybbI0Jd1AwoPkv',
+                        };
+
+                        // Send POST request using axios
+                        axios.post('todos/change-status.html', data)
+                            .catch(function (error) {
+                                console.log(error);
+                            });
+                    });
+                });
+
+            });
+        })();
+    </script>
+    <script>
+        (function () {
+            "use strict";
+            window.addEventListener('DOMContentLoaded', () => {
+                const btnTimer = document.getElementById('btnTimer');
+                const timer_count = document.getElementById('timer_count');
+                const timer = new Timer();
+                btnTimer.addEventListener('click', () => {
+                    btnTimer.disabled = true;
+                    window.location.href = 'login.html';
+                });
+
+                if (timer_count) {
+                    timer.start({
+                        precision: 'seconds',
+                        startValues: {seconds: 329}
+                    });
+                    timer.addEventListener('secondsUpdated', function () {
+                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    });
+                }
+
+            });
+        })();
+    </script>
+</body>
+
+<!-- Mirrored from studybuddy.cloudonex.com/app/add-task?id=9 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:50:43 GMT -->
+</html>
