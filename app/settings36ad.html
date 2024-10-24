@@ -57,10 +57,10 @@
                 <div class="app-brand">
 
                     <a href="dashboard.html" class="app-brand-link">
-              <span class="app-brand-logo mt-3">
-                                        <img src="../uploads/system/backend-logo7b30.png?v=4"
-                           alt="CloudOnex" class="max-height-35 py-1 my-1">
-                                </span>
+                        <span class="app-brand-logo mt-3">
+                            <img src="../uploads/system/backend-logo7b30.png?v=4"
+               alt="CollegeConnect" class=" py-1 my-1" style="width: 35%;">
+                    </span>
                     </a>
 
 
@@ -230,7 +230,7 @@
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <h5 class="fw-bold mb-0">
-                                                                            <span class="text-muted fw-light">Settings /</span> API settings
+                                                                            <span class="text-muted fw-light">Settings /</span> Profile Settings
                                     
                                 </h5>
                             </div>
@@ -313,28 +313,76 @@
 
                             
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h1 class="h3">Users</h1>
-            <div>
-                <a href="login.html" class="btn btn-primary">Create API Key</a>
-            </div>
+            <h1 class="h3">Profile Settings</h1>
+           
         </div>
 
-        <div class="card">
-            <div class="card-body">
-                <table id="app-data-table" class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Label</th>
-                        <th>Owner</th>
-                        <th>Created</th>
-                        <th class="text-end">Manage</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                                        </tbody>
-                </table>
-            </div>
-        </div>
+        <div class="card">  <form novalidate="novalidate" method="post" action="https://studybuddy.cloudonex.com/app/user" id="form-user"
+            data-form="https://studybuddy.cloudonex.com/app/settings?tab=users" data-btn-id="btn-save-user">
+
+          <h4 class="text-dark fw-bolder">Details</h4>
+
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="mb-3">
+                      <label for="first_name">First Name</label>
+                      <input type="text" class="form-control" id="first_name" name="first_name"
+                             value="Liam" required>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="mb-3">
+                      <label for="last_name">Last Name</label>
+                      <input type="text" class="form-control" id="last_name" name="last_name"
+                             value="P" required>
+                  </div>
+              </div>
+          </div>
+
+          <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email"
+                     value="demo@example.com" required>
+          </div>
+
+          <div class="mb-3">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" name="phone"
+                     value="">
+          </div>
+
+          <div class="mb-3">
+              <label class="form-label">Choose Language</label>
+              <select class="form-select" name="language" id="language">
+                                                      <option value="en"  >English</option>
+                                                      <option value="it"  >Italian</option>
+                                                      <option value="fr"  >French</option>
+                                                      <option value="zh_cn"  >Chinese</option>
+                                                      <option value="es"  >Spanish</option>
+                                                      <option value="pt_br"  >Portuguese(Brazil)</option>
+                                                      <option value="tr"  >Turkish</option>
+                                              </select>
+          </div>
+
+          <div class="mb-3">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" value=""
+                     >
+                                              <span class="text-muted">Keep this field blank not to change the password. </span>
+                                      </div>
+
+          <div class="mb-3">
+              <label for="password_confirmation">Confirm Password</label>
+              <input type="password" class="form-control" id="password_confirmation"
+                     name="password_confirmation" value="" >
+          </div>
+
+                                      <input type="hidden" name="current_user" value="ff4727f9-d8e9-4730-b5a1-9933d609158e">
+          
+
+          <button type="submit" class="btn btn-primary" id="btn-save-user">Save</button>
+
+      </form></div>
 
         
 

@@ -2,6 +2,9 @@
     color: #83838d;
 }
 
+.apexcharts-datalabels-group{
+    font-family:"Inter" ;
+}
 .bg-menu-theme .menu-header {
     color: #cec5ed!important;
 }
