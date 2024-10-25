@@ -241,9 +241,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <li class="nav-item lh-1 me-3">
-                                <button id="btnTimer" class="btn rounded-pill btn-dark">
-                                                                            <i class="bi bi-pause-fill"></i> <span id="timer_count"></span>
-                                                                    </button>
+                               
                             </li>
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
@@ -553,12 +551,12 @@
                             <div class="col-6">
                                 <label class="form-label">Start Date</label>
                                 <input class="form-control" name="start_date" id="start_date"
-                                       value="2023-12-31 00:00:00"
+                                       value="2024-12-31 00:00:00"
                                         >
                             </div>
                             <div class="col-6">
                                 <label class="form-label">End Date</label>
-                                <input class="form-control" name="end_date" id="end_date"                                 value="2023-12-31 00:00:00"
+                                <input class="form-control" name="end_date" id="end_date"                                 value="2024-12-31 00:00:00"
                                        >
                             </div>
                         </div>
@@ -781,21 +779,21 @@
         (function () {
             "use strict";
             window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
+                const btnSheets = document.getElementById('btnSheets');
+                const Sheets_count = document.getElementById('Sheets_count');
+                const Sheets = new Sheets();
+                btnSheets.addEventListener('click', () => {
+                    btnSheets.disabled = true;
                     window.location.href = 'login.html';
                 });
 
-                if (timer_count) {
-                    timer.start({
+                if (Sheets_count) {
+                    Sheets.start({
                         precision: 'seconds',
                         startValues: {seconds: 341}
                     });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    Sheets.addEventListener('secondsUpdated', function () {
+                        Sheets_count.innerHTML = Sheets.getTimeValues().toString();
                     });
                 }
 

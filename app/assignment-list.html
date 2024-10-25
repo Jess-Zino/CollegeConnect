@@ -142,7 +142,7 @@
 
                                             <li class="menu-item ">
                             <a href="spreadsheets.html" class="menu-link">
-                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Timer
+                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Sheets
                             </a>
                         </li>
                     
@@ -227,9 +227,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <li class="nav-item lh-1 me-3">
-                                <button id="btnTimer" class="btn rounded-pill btn-dark">
-                                                                            <i class="bi bi-pause-fill"></i> <span id="timer_count"></span>
-                                                                    </button>
+                               
                             </li>
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
@@ -380,7 +378,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -474,7 +472,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -570,7 +568,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -664,7 +662,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -770,7 +768,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -875,7 +873,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -971,7 +969,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -1067,7 +1065,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -1173,7 +1171,7 @@
                         <td>
                             <p class="text-xs font-weight-bold mb-0">
 
-                                                                    31 Dec 2023
+                                                                    31 Dec 2024
 
                                                             </p>
                         </td>
@@ -1254,21 +1252,21 @@
         (function () {
             "use strict";
             window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
+                const btnSheets = document.getElementById('btnSheets');
+                const Sheets_count = document.getElementById('Sheets_count');
+                const Sheets = new Sheets();
+                btnSheets.addEventListener('click', () => {
+                    btnSheets.disabled = true;
                     window.location.href = 'login.html';
                 });
 
-                if (timer_count) {
-                    timer.start({
+                if (Sheets_count) {
+                    Sheets.start({
                         precision: 'seconds',
                         startValues: {seconds: 333}
                     });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    Sheets.addEventListener('secondsUpdated', function () {
+                        Sheets_count.innerHTML = Sheets.getTimeValues().toString();
                     });
                 }
 

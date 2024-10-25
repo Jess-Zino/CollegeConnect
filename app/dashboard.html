@@ -144,7 +144,7 @@
 
                                             <li class="menu-item ">
                             <a href="spreadsheets.html" class="menu-link">
-                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Timer
+                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Sheets
                             </a>
                         </li>
                     
@@ -606,9 +606,9 @@
                                                 <div>
                                                     <p class="mb-2 text-sm">Explore the domain of computer vision and image processing, covering topics like object detection, image segmentation, and image recognition. Utilize libraries such as OpenCV and TensorFlow for practical applications.</p>
                                                     Created: <span
-                                                            class="badge bg-label-success me-3">01 Jan 1970</span>Finish by
+                                                            class="badge bg-label-success me-3">01 Jan 2023</span>Finish by
                                                     :
-                                                    <span class="badge bg-label-danger-soft">31 Dec 2023</span>
+                                                    <span class="badge bg-label-danger-soft">31 Dec 2024</span>
 
 
                                                 </div>
@@ -651,9 +651,9 @@
                                                 <div>
                                                     <p class="mb-2 text-sm">pply your theoretical knowledge by working on practical AI projects. Engage in hands-on experiences, participate in Kaggle competitions, and collaborate on AI projects to gain valuable industry experience and showcase your skills.</p>
                                                     Created: <span
-                                                            class="badge bg-label-success me-3">01 Jan 1970</span>Finish by
+                                                            class="badge bg-label-success me-3">01 Jan 2023</span>Finish by
                                                     :
-                                                    <span class="badge bg-label-danger-soft">23 Sep 2023</span>
+                                                    <span class="badge bg-label-danger-soft">23 Sep 2024</span>
 
 
                                                 </div>
@@ -1152,21 +1152,21 @@
         (function () {
             "use strict";
             window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
+                const btnSheets = document.getElementById('btnSheets');
+                const Sheets_count = document.getElementById('Sheets_count');
+                const Sheets = new Sheets();
+                btnSheets.addEventListener('click', () => {
+                    btnSheets.disabled = true;
                     window.location.href = 'login.html';
                 });
 
-                if (timer_count) {
-                    timer.start({
+                if (Sheets_count) {
+                    Sheets.start({
                         precision: 'seconds',
                         startValues: {seconds: 98}
                     });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    Sheets.addEventListener('secondsUpdated', function () {
+                        Sheets_count.innerHTML = Sheets.getTimeValues().toString();
                     });
                 }
 

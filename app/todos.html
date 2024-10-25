@@ -144,7 +144,7 @@
 
                                             <li class="menu-item ">
                             <a href="spreadsheets.html" class="menu-link">
-                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Timer
+                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Sheets
                             </a>
                         </li>
                     
@@ -402,7 +402,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">31 Dec 2023</span>
+                                                    class="text-xs font-weight-bolder">31 Dec 2024</span>
                                         </div>
 
 
@@ -493,7 +493,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">03 Mar 2023</span>
+                                                    class="text-xs font-weight-bolder">03 Mar 2024</span>
                                         </div>
 
 
@@ -538,7 +538,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">21 Jul 2023</span>
+                                                    class="text-xs font-weight-bolder">21 Jul 2024</span>
                                         </div>
 
 
@@ -584,7 +584,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">12 Oct 2023</span>
+                                                    class="text-xs font-weight-bolder">12 Oct 2024</span>
                                         </div>
 
 
@@ -629,7 +629,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">11 Dec 2023</span>
+                                                    class="text-xs font-weight-bolder">11 Dec 2024</span>
                                         </div>
 
 
@@ -674,7 +674,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">23 Feb 2023</span>
+                                                    class="text-xs font-weight-bolder">23 Feb 2024</span>
                                         </div>
 
 
@@ -720,7 +720,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">13 Aug 2023</span>
+                                                    class="text-xs font-weight-bolder">13 Aug 2024</span>
                                         </div>
 
 
@@ -810,7 +810,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">31 Oct 2023</span>
+                                                    class="text-xs font-weight-bolder">31 Oct 2024</span>
                                         </div>
 
 
@@ -856,7 +856,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">09 Apr 2023</span>
+                                                    class="text-xs font-weight-bolder">09 Apr 2024</span>
                                         </div>
 
 
@@ -946,7 +946,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">03 Feb 2023</span>
+                                                    class="text-xs font-weight-bolder">03 Feb 2024</span>
                                         </div>
 
 
@@ -992,7 +992,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">31 Dec 2023</span>
+                                                    class="text-xs font-weight-bolder">31 Dec 2024</span>
                                         </div>
 
 
@@ -1037,7 +1037,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">09 Apr 2023</span>
+                                                    class="text-xs font-weight-bolder">09 Apr 2024</span>
                                         </div>
 
 
@@ -1082,7 +1082,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">31 Dec 2023</span>
+                                                    class="text-xs font-weight-bolder">31 Dec 2024</span>
                                         </div>
 
 
@@ -1128,7 +1128,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">23 Sep 2023</span>
+                                                    class="text-xs font-weight-bolder">23 Sep 2024</span>
                                         </div>
 
 
@@ -1173,7 +1173,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">09 Apr 2023</span>
+                                                    class="text-xs font-weight-bolder">09 Apr 2024</span>
                                         </div>
 
 
@@ -1219,7 +1219,7 @@
                                         <div>
 
                                             Finish by: <span
-                                                    class="text-xs font-weight-bolder">31 Dec 2023</span>
+                                                    class="text-xs font-weight-bolder">31 Dec 2024</span>
                                         </div>
 
 
@@ -1328,21 +1328,21 @@
         (function () {
             "use strict";
             window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
+                const btnSheets = document.getElementById('btnSheets');
+                const Sheets_count = document.getElementById('Sheets_count');
+                const Sheets = new Sheets();
+                btnSheets.addEventListener('click', () => {
+                    btnSheets.disabled = true;
                     window.location.href = 'login.html';
                 });
 
-                if (timer_count) {
-                    timer.start({
+                if (Sheets_count) {
+                    Sheets.start({
                         precision: 'seconds',
                         startValues: {seconds: 107}
                     });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    Sheets.addEventListener('secondsUpdated', function () {
+                        Sheets_count.innerHTML = Sheets.getTimeValues().toString();
                     });
                 }
 

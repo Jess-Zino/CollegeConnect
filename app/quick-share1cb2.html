@@ -222,7 +222,7 @@
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <h5 class="fw-bold mb-0">
-                                                                            <span class="text-muted fw-light">Quick Share /</span> Manage your shares
+                                                                            <span class="text-muted fw-light">Quick Share /</span> Manage your Shared Progress
                                     
                                 </h5>
                             </div>
@@ -362,21 +362,21 @@
         (function () {
             "use strict";
             window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
+                const btnSheets = document.getElementById('btnSheets');
+                const Sheets_count = document.getElementById('Sheets_count');
+                const Sheets = new Sheets();
+                btnSheets.addEventListener('click', () => {
+                    btnSheets.disabled = true;
                     window.location.href = 'login.html';
                 });
 
-                if (timer_count) {
-                    timer.start({
+                if (Sheets_count) {
+                    Sheets.start({
                         precision: 'seconds',
                         startValues: {seconds: 112}
                     });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
+                    Sheets.addEventListener('secondsUpdated', function () {
+                        Sheets_count.innerHTML = Sheets.getTimeValues().toString();
                     });
                 }
 
