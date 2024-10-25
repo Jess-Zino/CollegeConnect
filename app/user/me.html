@@ -238,11 +238,7 @@
                         <!-- /Search -->
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
-                            <li class="nav-item lh-1 me-3">
-                                <button id="btnTimer" class="btn rounded-pill btn-dark">
-                                                                            <i class="bi bi-pause-fill"></i> <span id="timer_count"></span>
-                                                                    </button>
-                            </li>
+                            
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                                    data-bs-toggle="dropdown">
@@ -425,31 +421,7 @@
         </div>
     </div>
 </div>
-        <script>
-        (function () {
-            "use strict";
-            window.addEventListener('DOMContentLoaded', () => {
-                const btnTimer = document.getElementById('btnTimer');
-                const timer_count = document.getElementById('timer_count');
-                const timer = new Timer();
-                btnTimer.addEventListener('click', () => {
-                    btnTimer.disabled = true;
-                    window.location.href = '../login.html';
-                });
-
-                if (timer_count) {
-                    timer.start({
-                        precision: 'seconds',
-                        startValues: {seconds: 113}
-                    });
-                    timer.addEventListener('secondsUpdated', function () {
-                        timer_count.innerHTML = timer.getTimeValues().toString();
-                    });
-                }
-
-            });
-        })();
-    </script>
+      
 </body>
 
 <!-- Mirrored from studybuddy.cloudonex.com/app/user/me by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:48:28 GMT -->
