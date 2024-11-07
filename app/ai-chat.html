@@ -20,7 +20,34 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="CollegeConnect">
     <meta name="application-name" content="CollegeConnect">
-
+    <style>
+        /* Hide the radio buttons visually but keep them accessible */
+        input[type="radio"] {
+          position: absolute;
+          opacity: 0;
+          pointer-events: none;
+        }
+    
+        /* Style the label to show a visual change when the radio is selected */
+        label {
+            width: 100%;
+          cursor: pointer;
+          display: block;
+          padding: 10px;
+          border-radius: 5px;
+          transition: background-color 0.2s ease;
+        }
+    
+        /* Highlight the label when the associated radio button is checked */
+        input[type="radio"]:checked + a label {
+          background-color: #d3e2ff;
+        }
+    
+        /* Style for hover effect */
+        label:hover {
+          background-color: #f0f4ff;
+        }
+      </style>
     
             <title>Chat a Tutor | CollegeConnect</title>
     
@@ -306,112 +333,78 @@
                     </div>
 
                     <ul class="p-0 m-0">
-                        
-                            <a href="login.html?session_id=674c7b45-2ece-4609-918b-ecd19b8b681f" class="">
-                                <div class="d-flex mb-4 pb-1 p-1">
-                                    <div class="avatar flex-shrink-0 me-3">
-                                                                                <span class="avatar-initial rounded bg-warning text-white">D</span>
 
-                                    </div>
-                                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                                        <div class="me-2">
-                                            <h6 class="mb-0"> Judas Ogbe</h6>
-                                            <small class="text-muted"> GEC117</small>
-                                        </div>
-                                        <div class="user-progress">
-                                            <small class="fw-semibold"><a
-                                                        class="text-end ms-4 btn btn-link text-dark px-3 mb-0"
-                                                        data-delete-item="true"
-                                                        href="login.html"><i
-                                                            class="bi bi-trash3-fill"></i></a></small>
-                                        </div>
-                                    </div>
+                        <label>
+                            <input type="radio" name="chat" value="Liam P." onchange="updateTutorName(this)">
+                         
+                              <div class="d-flex mb-4 pb-1 p-1">
+                                <div class="avatar flex-shrink-0 me-3">
+                                  <span class="avatar-initial rounded bg-warning text-white">L</span>
                                 </div>
-                            </a>
-
-                        
-                            <a href="login.html?session_id=f66841fd-5a31-44b3-aaf1-ed74717f5443" class="">
-                                <div class="d-flex mb-4 pb-1 p-1">
-                                    <div class="avatar flex-shrink-0 me-3">
-                                                                                <span class="avatar-initial rounded bg-primary text-white">A</span>
-
-                                    </div>
-                                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                                        <div class="me-2">
-                                            <h6 class="mb-0"> Kiton Adeyemi</h6>
-                                            <small class="text-muted"> CEN111</small>
-                                        </div>
-                                        <div class="user-progress">
-                                            <small class="fw-semibold"><a
-                                                        class="text-end ms-4 btn btn-link text-dark px-3 mb-0"
-                                                        data-delete-item="true"
-                                                        href="login.html"><i
-                                                            class="bi bi-trash3-fill"></i></a></small>
-                                        </div>
-                                    </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                  <div class="me-2">
+                                    <h6 class="mb-0"> Liam P.</h6>
+                                    <small class="text-muted"> GEC117</small>
+                                  </div>
                                 </div>
-                            </a>
-
-                        
-                            <a href="login.html?session_id=8e511c09-a467-4398-be8f-c424092c1aff" class="">
-                                <div class="d-flex mb-4 pb-1 p-1">
-                                    <div class="avatar flex-shrink-0 me-3">
-                                                                                <span class="avatar-initial rounded bg-secondary text-white">B</span>
-
-                                    </div>
-                                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                                        <div class="me-2">
-                                            <h6 class="mb-0"> Miracle Oseme</h6>
-                                            <small class="text-muted"> EIE111</small>
-                                        </div>
-                                        <div class="user-progress">
-                                            <small class="fw-semibold"><a
-                                                        class="text-end ms-4 btn btn-link text-dark px-3 mb-0"
-                                                        data-delete-item="true"
-                                                        href="login.html"><i
-                                                            class="bi bi-trash3-fill"></i></a></small>
-                                        </div>
-                                    </div>
+                              </div>
+                          </label>
+                        <label>
+                          <input type="radio" name="chat" value="Judas Ogbe" onchange="updateTutorName(this)">
+                       
+                            <div class="d-flex mb-4 pb-1 p-1">
+                              <div class="avatar flex-shrink-0 me-3">
+                                <span class="avatar-initial rounded bg-warning text-white">D</span>
+                              </div>
+                              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                <div class="me-2">
+                                  <h6 class="mb-0"> Judas Ogbe</h6>
+                                  <small class="text-muted"> GEC117</small>
                                 </div>
-                            </a>
-
-                        
-                            <a href="login.html?session_id=fcf01fe5-a0b2-495a-be35-298833ac24d7" class="">
-                                <div class="d-flex mb-4 pb-1 p-1">
-                                    <div class="avatar flex-shrink-0 me-3">
-                                                                                <span class="avatar-initial rounded bg-primary text-white">Y</span>
-
-                                    </div>
-                                    <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                                        <div class="me-2">
-                                            <h6 class="mb-0"> Mabel Asoko</h6>
-                                            <small class="text-muted">GST111</small>
-                                        </div>
-                                        <div class="user-progress">
-                                            <small class="fw-semibold"><a
-                                                        class="text-end ms-4 btn btn-link text-dark px-3 mb-0"
-                                                        data-delete-item="true"
-                                                        href="login.html"><i
-                                                            class="bi bi-trash3-fill"></i></a></small>
-                                        </div>
-                                    </div>
+                              </div>
+                            </div>
+                        </label>
+                      
+                        <label>
+                          <input type="radio" name="chat" value="Kiton Adeyemi" onchange="updateTutorName(this)">
+                            <div class="d-flex mb-4 pb-1 p-1">
+                              <div class="avatar flex-shrink-0 me-3">
+                                <span class="avatar-initial rounded bg-primary text-white">A</span>
+                              </div>
+                              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                <div class="me-2">
+                                  <h6 class="mb-0"> Kiton Adeyemi</h6>
+                                  <small class="text-muted"> CEN111</small>
                                 </div>
-                            </a>
-
-                        
-                            <a href="login.html?session_id=84bb6023-ea19-46c5-8a25-a345ac462222" class="">
-                                <div class="d-flex mb-4 pb-1 p-1">
-                                    <div class="avatar flex-shrink-0 me-3">
-                                                                                <span class="avatar-initial rounded bg-warning text-white">P</span>
-
-                                    </div>
-                                  
+                              </div>
+                            </div>
+                        </label>
+                      
+                        <label>
+                          <input type="radio" name="chat" value="Miracle Oseme" onchange="updateTutorName(this)">
+                            <div class="d-flex mb-4 pb-1 p-1">
+                              <div class="avatar flex-shrink-0 me-3">
+                                <span class="avatar-initial rounded bg-secondary text-white">B</span>
+                              </div>
+                              <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                <div class="me-2">
+                                  <h6 class="mb-0"> Miracle Oseme</h6>
+                                  <small class="text-muted"> EIE111</small>
                                 </div>
-                            </a>
-
-                        
-                    </ul>
-
+                              </div>
+                            </div>
+                        </label>
+                      
+                        <!-- Repeat similarly for other chat items -->
+                      
+                      </ul>
+                      <script>
+                        function updateTutorName(radio) {
+                          // Update the tutor name based on the selected chat's radio button value
+                          document.getElementById("tutornNme").innerText = radio.value || "Liam P.";
+                        }
+                      </script>
+                      
                 </div>
             </div>
         </div>
@@ -428,7 +421,7 @@
                                         </div>
                                     </div>
                                     <div class="ms-3">
-                                        <h6 class="mb-0 d-block  fw-bolder text-dark">Liam P</h6>
+                                        <h6 class="mb-0 d-block  fw-bolder text-dark" id="tutornNme">Liam P</h6>
                                         <small class="text-muted">2024-10-19</small>
 
 
@@ -465,10 +458,7 @@
                                            placeholder="Type Message here" aria-label="Message example input">
                                 </div>
                                 <button id="send_message" class="btn btn-dark mb-0 ms-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                         class="bi bi-play" viewBox="0 0 16 16">
-                                        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                                    </svg>
+                                    <i class="bi bi-send align-middle"></i>
                                 </button>
                             </div>
                             <input type="hidden" id="chat_session_id" name="session_id"
