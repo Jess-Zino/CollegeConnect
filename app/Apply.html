@@ -306,15 +306,23 @@
                   <div class="col-md-6">
                       <div class="mb-3">
                           <label for="first_name">First Name</label>
-                          <input type="text" class="form-control" id="first_name" name="first_name" value="Liam" required>
+                          <input type="text" class="form-control" id="first_name" name="first_name" value="Johnson" required>
                       </div>
                   </div>
                   <div class="col-md-6">
                       <div class="mb-3">
                           <label for="last_name">Last Name</label>
-                          <input type="text" class="form-control" id="last_name" name="last_name" value="P" required>
+                          <input type="text" class="form-control" id="last_name" name="last_name" value="Pelumi" required>
                       </div>
                   </div>
+                  <div class="mb-3">
+                    <label for="last_name">Email</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" value="demo@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="last_name">Phone Number</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" value="+234 802 123 456" required>
+                </div>
               </div>
       
               <button type="button" class="btn btn-primary next-step">Next</button>
@@ -325,7 +333,23 @@
               <h4 class="text-dark fw-bolder">Step 2: Academic Information</h4>
       
               <div class="row">
-                  <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="cgpa">CGPA</label>
+                            <input type="text" class="form-control" id="cgpa" name="cgpa" placeholder="e.g., 3.8" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="level">Level</label>
+                            <input type="text" class="form-control" id="level" name="level" placeholder="100-500" required>
+                        </div>
+                    </div>
+                </div>
+        
+                  <div class="">
+                    
                       <div class="mb-3">
                           <label for="course">Course</label>
                           <select class="form-select" name="course" id="course" required>
@@ -371,41 +395,25 @@
                         </select>
                       </div>
                   </div>
-                  <div class="col-md-6">
-                      <div class="mb-3">
-                          <label for="department">Department</label>
-                          <input type="text" class="form-control" id="department" name="department" required>
-                      </div>
-                  </div>
+                 
               </div>
+       
+                <div class="mb-3">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" name="department" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="department">College</label>
+                <input type="text" class="form-control" id="department" name="department" required>
+            
+        </div>
       
               <button type="button" class="btn btn-secondary prev-step">Back</button>
               <button type="button" class="btn btn-primary next-step">Next</button>
           </div>
       
-          <!-- Step 3: Academic Details -->
-          <div id="step-3" class="form-step" style="display:none;">
-              <h4 class="text-dark fw-bolder">Step 3: Academic Details</h4>
-      
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="mb-3">
-                          <label for="cgpa">CGPA</label>
-                          <input type="text" class="form-control" id="cgpa" name="cgpa" placeholder="e.g., 3.8" required>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="mb-3">
-                          <label for="level">Level</label>
-                          <input type="text" class="form-control" id="level" name="level" placeholder="100-500" required>
-                      </div>
-                  </div>
-              </div>
-      
-              <button type="button" class="btn btn-secondary prev-step">Back</button>
-              <button type="button" class="btn btn-primary next-step">Next</button>
-          </div>
-      
+         
           <!-- Step 4: Skills and Strengths -->
           <div id="step-4" class="form-step" style="display:none;">
               <h4 class="text-dark fw-bolder">Step 4: Skills and Strengths</h4>
