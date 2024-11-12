@@ -79,6 +79,15 @@
                           <label for="student-email" class="form-label">Student Email</label>
                           <input type="email" class="form-control" id="student-email" name="student_email" required />
                       </div>
+                      
+                      <div class="mb-3">
+                        <label for="student-email" class="form-label">Level</label>
+                        <input type="email" class="form-control" id="student-email" name="student_email" required />
+                      </div>
+                      <div class="mb-3">
+                        <label for="student-email" class="form-label">Programme</label>
+                        <input type="email" class="form-control" id="student-email" name="student_email" required />
+                      </div>
               
                       <div class="mb-3">
                           <label for="phone" class="form-label">Phone Number</label>
@@ -118,9 +127,43 @@
                                   onclick="showStep(2)">Next</button>
                       </div>
                   </div>
-              
+
+
+              </form>
+
+              <div class=" my-3 step-2" style="display: none;">
+                <h3>Select Courses</h3>
+                <form action="classroom.html">
+                    <div>
+                        <input type="checkbox"id="eie511" name="courses" value="EIE 511">
+                        <label for="eie511"> EIE 511</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="eie511" name="courses" value="EIE 511">
+                        <label for="eie511"> EIE 511</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="eie511" name="courses" value="EIE 511">
+                        <label for="eie511"> EIE 511</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="eie511" name="courses" value="EIE 511">
+                        <label for="eie511"> EIE 511</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox"id="eie511" name="courses" value="EIE 511">
+                        <label for="eie511"> EIE 511</label><br>
+                    </div>
+                    <button type="button" class="btn text-white btn-lg d-grid w-100 mt-4"
+                                  style="background-image: linear-gradient(60deg, #9674d5, #4778f5);"
+                                  onclick="addClassess()">ADD CLASSESS</button>
+                    <button type="button" class="btn text-white btn-lg d-grid w-100 mt-4"
+                                  style="background-image: linear-gradient(60deg, #74d5be, #4778f5);"
+                                  onclick="showStep(3)">Next</button>
+                </form>
+              </div>
                   <!-- Step 2: Learning Style Preferences -->
-                  <div class="step-2" style="display: none;">
+                  <div class="step-3" style="display: none;">
                       <div class="mb-3">
                           <label for="learning-style" class="form-label">Preferred Learning Style</label>
                           <select class="form-control" id="learning-style" name="learning_style" required>
@@ -142,10 +185,24 @@
                         function showStep(step) {
                             document.querySelector('.step-1').style.display = step === 1 ? 'block' : 'none';
                             document.querySelector('.step-2').style.display = step === 2 ? 'block' : 'none';
+                            document.querySelector('.step-3').style.display = step === 3 ? 'block' : 'none';
                         }
                     
                         function redirectToLoader() {
                             window.location.href = "tutorLoader.html";
+                        }
+
+                        function addClassess(){
+                            let items = document.getElementsByName("courses")
+                            let arr = [];
+                            for (let i = 0; i <items.length; i++){
+                                if (items[i].type == 'checkbox' && items[i].checked == true){
+                                    arr.push(items[i].value)
+                                }
+                            }
+                            localStorage.setItem("ddvalue", arr)
+                            // document.write("Courses Added successfully, Go to Classroom on Dashboard to access classes")
+                            return true
                         }
                     </script>
                     

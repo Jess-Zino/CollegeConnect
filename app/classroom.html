@@ -417,6 +417,14 @@
                 </div> -->
             <!-- </div> -->
         <!-- </div> -->
+
+<!-- TO DISPLAY CLASSES -->
+        <div>
+            <h3>Classes</h3>
+            <div id="result"></div>
+        </div>
+
+
         <div class=" mb-4">
             <div class="overflow-x-hidden  overflow-hidden">
                 <div class="card">
@@ -621,6 +629,17 @@
             });
 
         });
+
+
+
+        // FUNCTION TO DISPLAY CLASSES
+        let arr = localStorage.getItem('ddvalue')
+        arr = arr.split(",")
+        let selectedItems = "";
+        for (let i = 0; i < arr.length; i++){
+            selectedItems += "<br>" + arr[i]
+        }
+        document.getElementById("result").innerHTML = selectedItems;
     </script>
 
     <script>
