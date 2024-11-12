@@ -181,9 +181,6 @@
 
                             <li class="menu-item  active">
                                 <a href="settings36ad.html?tab=users" class="menu-link">Profile</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="Apply.html" class="menu-link">Apply to be a Tutor</a>
                             </li>           
                             
 
@@ -216,7 +213,7 @@
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <h5 class="fw-bold mb-0">
-                                                                            <span class="text-muted fw-light">Settings /</span> Apply to be a Tutor
+                                <span class="text-muted fw-light">Settings /</span> Apply to be a Tutor
                                     
                                 </h5>
                             </div>
@@ -351,9 +348,9 @@
                   <div class="">
                     
                       <div class="mb-3">
-                          <label for="course">Course</label>
+                          <label for="course">Programme</label>
                           <select class="form-select" name="course" id="course" required>
-                            <option value="">Select Course</option>
+                            <option value="">Select Programme</option>
                             <option value="ACCOUNTING">ACCOUNTING</option>
                             <option value="ARCHITECTURE">ARCHITECTURE</option>
                             <option value="BANKING AND FINANCE">BANKING AND FINANCE</option>
@@ -412,7 +409,41 @@
               <button type="button" class="btn btn-secondary prev-step">Back</button>
               <button type="button" class="btn btn-primary next-step">Next</button>
           </div>
-      
+          
+          <!-- Step -3: Preferred Teaching style -->
+          <div id="step-3" class="form-step" style="display:none;" >
+            <h4 class="text-dark fw-bolder">Step 3 : Preferred Teaching Style</h4>
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <select class="form-control" id="teaching-style" name="teaching_style" required>
+                            <option value="">Select Your Teaching Style</option>
+                            <option value="visual">Visual</option>
+                            <option value="auditory">Auditory</option>
+                            <option value="kinesthetic">Kinesthetic</option>
+                            <option value="reading-writing">Reading/Writing</option>
+                        </select>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <select class="form-control" id="turor_class" name="turor_class" required>
+                                <option value="">Select Your Preferred Class</option>
+                                <option value="eie111">EIE 111</option>
+                                <option value="cen111">CEN 111</option>
+                                <option value="gst111">GST 111</option>
+                                <option value="phy111">PHY 111</option>
+                                <option value="gec117">GEC 117</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary prev-step">Back</button>
+            <button type="button" class="btn btn-primary next-step">Next</button>
+        </div>
          
           <!-- Step 4: Skills and Strengths -->
           <div id="step-4" class="form-step" style="display:none;">

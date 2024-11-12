@@ -246,7 +246,9 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item.open>.men
 .text-primary {
     color: #8C52FF!important;
 }
-
+.text-white{
+    color: #ffffff !important;
+}
 /*buttons*/
 
 
