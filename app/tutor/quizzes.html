@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from studybuddy.CollegeConnect.com/app/assignment-list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:51:31 GMT -->
+<!-- Mirrored from studybuddy.CollegeConnect.com/app/assignments by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:46:28 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     <meta name="application-name" content="CollegeConnect">
 
     
-            <title>Assignments | CollegeConnect</title>
+            <title>quizzes | CollegeConnect</title>
     
     <script>
         window.csrf_token = 'OGpnEwoPy9Hl7sJ6V1M8Kle90vybbI0Jd1AwoPkv';
@@ -76,7 +76,7 @@
                 <ul class="menu-inner py-1 mt-3">
 
 
-                    <li class="menu-item   ">
+                    <li class="menu-item  ">
                         <a href="dashboard.html" class="menu-link">
                             <i class="menu-icon bi bi-house-fill"></i> Dashboard
                         </a>
@@ -96,7 +96,7 @@
                             </a>
                         </li>
                     
-                                            <li class="menu-item activec ">
+                                            <li class="menu-item  active">
                             <a href="assignments.html" class="menu-link">
                                 <i class="text-success menu-icon bi bi-journal-text"></i>Assignments
                             </a>
@@ -140,9 +140,9 @@
                         </li>
                     
 
-                                            <li class="menu-item ">
-                            <a href="spreadsheets.html" class="menu-link">
-                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Sheets
+                        <li class="menu-item ">
+                            <a href="classroom.html" class="menu-link">
+                                <i class="menu-icon bi bi-file-earmark-spreadsheet-fill"></i> Classrooms
                             </a>
                         </li>
                     
@@ -174,6 +174,30 @@
                            
                         </ul>
                     </li>
+                                    <!-- TUTOR TOOLS -->
+                                    <li class="menu-item ">
+                                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                                               <i class="menu-icon bi bi-bar-chart"></i> Tutor Tools
+                                                </a>
+                                        <ul class="menu-sub">
+                                            <li class="menu-item ">
+                                                <a href="tutor-create-assignment.html"
+                                                   class="menu-link">Create Assignments </a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="create-quiz.html"
+                                                   class="menu-link">Create Quiz </a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="ai-chat.html"
+                                                   class="menu-link">Chat with student</a>
+                                            </li>
+                                            <li class="menu-item ">
+                                                <a href="spreadsheets.html"
+                                                   class="menu-link">Student Progress </a>
+                                            </li>
+                                        </ul>
+                                        </li>
                   <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Setup</span>
                     </li>
@@ -187,9 +211,6 @@
                              <li class="menu-item ">
                                 <a href="settings36ad.html?tab=users" class="menu-link">Profile</a>
                             </li>
-                              <li class="menu-item ">
-                                <a href="Apply.html" class="menu-link">Apply to be a Tutor</a>
-                            </li>
                                              
                             
 
@@ -199,8 +220,7 @@
 
                 </ul>
 
-            </aside>
-            <!-- / Menu -->
+            </aside>>
 
             <!-- Layout container -->
             <div class="layout-page">
@@ -221,7 +241,7 @@
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
                                 <h5 class="fw-bold mb-0">
-                                                                            <span class="text-muted fw-light">Assignments /</span> Manage your assignments
+                                                                            <span class="text-muted fw-light">Quizzes /</span> Manage your quizzes
                                     
                                 </h5>
                             </div>
@@ -271,9 +291,9 @@
                                             <div class="dropdown-divider"></div>
                                         </li>
                                     
-                                    <li>
-                                        <a class="dropdown-item" href="login.html">Logout</a>
-                                    </li>
+                                        <li>
+                                            <a class="dropdown-item" href="../login.html">Logout</a>
+                                        </li>
                                 </ul>
 
                             </li>
@@ -294,63 +314,74 @@
                         <div id="liveAlertPlaceholder"></div>
 
                         
-    <div class="row">
+    <div class=" row">
         <div class="col">
-            <h4 class="text-dark fw-bolder"> Assignments</h4>
-
+            <h4 class="text-dark fw-bolder"> Quizzes</h4>
         </div>
         <div class="col text-end">
-            <a href="create-assignment.html" type="button"
-               class="btn btn-primary text-white">Create Assignment </a>
-            <a href="assignments.html" type="button"
-               class="btn btn-dark text-white">Assignments Cards</a>
+            <a href="create-quiz.html" type="button"
+               class="btn btn-primary text-white">Create Quiz </a>
+            <!-- <a href="assignment-list.html" type="button"
+               class="btn btn-dark text-white">Assignments List</a> -->
         </div>
     </div>
-    <div class="card mt-2">
-        <div class="card-body table-responsive">
-            <table id="app-data-table" class="table table-light table-responsive">
-                <thead>
-                <tr>
-                    <th class="text-uppercase  text-xxs font-weight-bolder opacity-7">Product Name</th>
-                    <th class="text-uppercase  text-xxs font-weight-bolder opacity-7">Members</th>
-
-                    <th class="text-uppercase text-xxs font-weight-bolder opacity-7 ps-2">Due Date</th>
-                    <th class="text-uppercase text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-
-                    <th class="text-uppercase  text-xxs font-weight-bolder opacity-7 ps-2">Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                                    
-                                   
-                                
-                                    
-                                    
-                                    
-                                    <tr>
-                        <td>
-                            <div class="d-flex px-2">
+    <div class="row g-4 mt-2">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+            
+        
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <a href="view-assignment8803.html?id=7"
+                               class="d-flex align-items-center">
                                 <div class="avatar flex-shrink-0 me-3">
+                                    <div class="avatar flex-shrink-0 me-3">
 
-                                    
+                                        
 
-                                        <span class="avatar-initial rounded bg-primary text-white">A</span>
-                                    
+                                            <span class="avatar-initial rounded bg-primary text-white">A</span>
+                                        
+                                    </div>
                                 </div>
-
-
-                                <div class="my-auto">
-                                    <h6 class="text-sm mb-0 ms-1">
-                                        <a class="text-dark fw-bold"
-                                           href="view-assignment8803.html?id=7">
-                                            Artificial Intelligence (COMP300)
-                                        </a>
-                                    </h6>
+                                <div class="me-2 text-dark fw-bold h5 mb-0">
+                                    Artificial Intelligence (COMP300)
+                                </div>
+                            </a>
+                            <div class="ms-auto">
+                                <div class="btn-group">
+                                    <button type="button"
+                                            class="btn btn-outline-dark btn-icon btn-sm rounded-pill dropdown-toggle hide-arrow"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                class="bi bi-three-dots-vertical"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-end" style="">
+                                        <li><a class="dropdown-item"
+                                               href="view-assignment8803.html?id=7">Open</a>
+                                        </li>
+                                        <li>
+                                        <li><a class="dropdown-item"
+                                               href="create-assignment8803.html?id=7">Edit</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" data-delete-item="true"
+                                               href="login.html">Delete</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </td>
-                        <td class="">
-
+                        </div>
+                        <p>By harnessing the power of AI, we aim to enhance productivity, efficiency, and accuracy in fields such as healthcare, finance, manufacturing.</p>
+                        <div class="d-flex align-items-center flex-wrap">
                             <div class="avatar-group d-flex mt-2">
                                 <div class="d-flex flex-wrap align-items-center">
                                     <ul class="list-unstyled w-50 me-2 d-flex align-items-center avatar-group mb-0">
@@ -360,9 +391,9 @@
                                                         title=" Easton Bradtke"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    EB
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                EB
+                            </span>
                                                         </div>
                                                     </li>
 
@@ -371,82 +402,71 @@
                                                         title=" Karianne Altenwerth"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    KA
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                KA
+                            </span>
                                                         </div>
                                                     </li>
 
                                                                                                                                     
                                     </ul>
-
                                 </div>
-
-
                             </div>
-                        </td>
+                            <div class="ms-auto">
+                                                                    <span class="badge bg-label-primary"> Started</span>
 
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">
-
-                                                                    31 Dec 2024
-
-                                                            </p>
-                        </td>
-
-                        <td>
-                                                            <span class="badge bg-label-primary"> Started</span>
-
-                                                    </td>
-                        <td>
-
-                            <div class="btn-group">
-                                <button type="button"
-                                        class="btn btn-outline-dark btn-sm btn-icon rounded-pill dropdown-toggle hide-arrow"
-                                        data-bs-toggle="dropdown" aria-expanded="false"><i
-                                            class="bi bi-three-dots-vertical"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-end" style="">
-                                    <li><a class="dropdown-item"
-                                           href="view-assignment8803.html?id=7">Open</a>
-                                    </li>
-                                    <li>
-                                    <li><a class="dropdown-item"
-                                           href="create-assignment8803.html?id=7">Edit</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" data-delete-item="true"
-                                           href="login.html">Delete</a>
-                                    </li>
-                                </ul>
+                                                                <a href="javascript:"><span
+                                            class="badge bg-label-secondary"> 31 Dec 2024</span></a>
                             </div>
-
-                        </td>
-                    </tr>
-                                    <tr>
-                        <td>
-                            <div class="d-flex px-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <a href="view-assignmentc3c9.html?id=8"
+                               class="d-flex align-items-center">
                                 <div class="avatar flex-shrink-0 me-3">
+                                    <div class="avatar flex-shrink-0 me-3">
 
-                                    
-                                        <span class="avatar-initial rounded bg-info text-white">Q</span>
-                                    
+                                        
+                                            <span class="avatar-initial rounded bg-info text-white">Q</span>
+                                        
+                                    </div>
                                 </div>
-
-
-                                <div class="my-auto">
-                                    <h6 class="text-sm mb-0 ms-1">
-                                        <a class="text-dark fw-bold"
-                                           href="view-assignmentc3c9.html?id=8">
-                                            Quantum Mechanics (PHYS 301)
-                                        </a>
-                                    </h6>
+                                <div class="me-2 text-dark fw-bold h5 mb-0">
+                                    Quantum Mechanics (PHYS 301)
+                                </div>
+                            </a>
+                            <div class="ms-auto">
+                                <div class="btn-group">
+                                    <button type="button"
+                                            class="btn btn-outline-dark btn-icon btn-sm rounded-pill dropdown-toggle hide-arrow"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                class="bi bi-three-dots-vertical"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-end" style="">
+                                        <li><a class="dropdown-item"
+                                               href="view-assignmentc3c9.html?id=8">Open</a>
+                                        </li>
+                                        <li>
+                                        <li><a class="dropdown-item"
+                                               href="create-assignmentc3c9.html?id=8">Edit</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" data-delete-item="true"
+                                               href="login.html">Delete</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </td>
-                        <td class="">
-
+                        </div>
+                        <p>Enter the world of algorithms, programming, and problem-solving as you embark on a journey through computer science.</p>
+                        <div class="d-flex align-items-center flex-wrap">
                             <div class="avatar-group d-flex mt-2">
                                 <div class="d-flex flex-wrap align-items-center">
                                     <ul class="list-unstyled w-50 me-2 d-flex align-items-center avatar-group mb-0">
@@ -456,9 +476,9 @@
                                                         title=" Casimer Schowalter"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    CS
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                CS
+                            </span>
                                                         </div>
                                                     </li>
 
@@ -467,81 +487,70 @@
                                                         title=" Walter Crist"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    WC
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                WC
+                            </span>
                                                         </div>
                                                     </li>
 
                                                                                                                                     
                                     </ul>
-
                                 </div>
-
-
                             </div>
-                        </td>
+                            <div class="ms-auto">
+                                                                    <span class="badge bg-label-primary"> Started</span>
 
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">
-
-                                                                    31 Dec 2024
-
-                                                            </p>
-                        </td>
-
-                        <td>
-                                                            <span class="badge bg-label-primary"> Started</span>
-
-                                                    </td>
-                        <td>
-
-                            <div class="btn-group">
-                                <button type="button"
-                                        class="btn btn-outline-dark btn-sm btn-icon rounded-pill dropdown-toggle hide-arrow"
-                                        data-bs-toggle="dropdown" aria-expanded="false"><i
-                                            class="bi bi-three-dots-vertical"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-end" style="">
-                                    <li><a class="dropdown-item"
-                                           href="view-assignmentc3c9.html?id=8">Open</a>
-                                    </li>
-                                    <li>
-                                    <li><a class="dropdown-item"
-                                           href="create-assignmentc3c9.html?id=8">Edit</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" data-delete-item="true"
-                                           href="login.html">Delete</a>
-                                    </li>
-                                </ul>
+                                                                <a href="javascript:"><span
+                                            class="badge bg-label-secondary"> 31 Dec 2024</span></a>
                             </div>
-
-                        </td>
-                    </tr>
-                                    <tr>
-                        <td>
-                            <div class="d-flex px-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <a href="view-assignment5255.html?id=9"
+                               class="d-flex align-items-center">
                                 <div class="avatar flex-shrink-0 me-3">
+                                    <div class="avatar flex-shrink-0 me-3">
 
-                                                                            <span class="avatar-initial rounded bg-success text-white">M</span>
-                                    
+                                                                                    <span class="avatar-initial rounded bg-success text-white">M</span>
+                                        
+                                    </div>
                                 </div>
-
-
-                                <div class="my-auto">
-                                    <h6 class="text-sm mb-0 ms-1">
-                                        <a class="text-dark fw-bold"
-                                           href="view-assignment5255.html?id=9">
-                                            Macroeconomics (ECON201)
-                                        </a>
-                                    </h6>
+                                <div class="me-2 text-dark fw-bold h5 mb-0">
+                                    Macroeconomics (ECON201)
+                                </div>
+                            </a>
+                            <div class="ms-auto">
+                                <div class="btn-group">
+                                    <button type="button"
+                                            class="btn btn-outline-dark btn-icon btn-sm rounded-pill dropdown-toggle hide-arrow"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><i
+                                                class="bi bi-three-dots-vertical"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-end" style="">
+                                        <li><a class="dropdown-item"
+                                               href="view-assignment5255.html?id=9">Open</a>
+                                        </li>
+                                        <li>
+                                        <li><a class="dropdown-item"
+                                               href="create-assignment5255.html?id=9">Edit</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" data-delete-item="true"
+                                               href="login.html">Delete</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        </td>
-                        <td class="">
-
+                        </div>
+                        <p>Analyze and apply the principles of financial management, including capital budgeting, financial analysis, risk assessment. </p>
+                        <div class="d-flex align-items-center flex-wrap">
                             <div class="avatar-group d-flex mt-2">
                                 <div class="d-flex flex-wrap align-items-center">
                                     <ul class="list-unstyled w-50 me-2 d-flex align-items-center avatar-group mb-0">
@@ -551,9 +560,9 @@
                                                         title=" Otho Cassin"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    OC
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                OC
+                            </span>
                                                         </div>
                                                     </li>
 
@@ -562,9 +571,9 @@
                                                         title=" Bridgette Zulauf"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    BZ
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                BZ
+                            </span>
                                                         </div>
                                                     </li>
 
@@ -573,62 +582,27 @@
                                                         title=" Jayne Durgan"
                                                         class="avatar pull-up">
                                                         <div class="avatar">
-                                            <span class="avatar-initial rounded-circle bg-label-secondary">
-                                    JD
-                                </span>
+                                        <span class="avatar-initial rounded-circle bg-label-light">
+                                JD
+                            </span>
                                                         </div>
                                                     </li>
 
                                                                                                                                     
                                     </ul>
-
                                 </div>
-
-
                             </div>
-                        </td>
-
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">
-
-                                                                    31 Dec 2024
-
-                                                            </p>
-                        </td>
-
-                        <td>
-                                                            <span class="badge bg-label-yellow">Pending</span>
-                                                    </td>
-                        <td>
-
-                            <div class="btn-group">
-                                <button type="button"
-                                        class="btn btn-outline-dark btn-sm btn-icon rounded-pill dropdown-toggle hide-arrow"
-                                        data-bs-toggle="dropdown" aria-expanded="false"><i
-                                            class="bi bi-three-dots-vertical"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-end" style="">
-                                    <li><a class="dropdown-item"
-                                           href="view-assignment5255.html?id=9">Open</a>
-                                    </li>
-                                    <li>
-                                    <li><a class="dropdown-item"
-                                           href="create-assignment5255.html?id=9">Edit</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" data-delete-item="true"
-                                           href="login.html">Delete</a>
-                                    </li>
-                                </ul>
+                            <div class="ms-auto">
+                                                                    <span class="badge bg-label-yellow">Pending</span>
+                                                                <a href="javascript:"><span
+                                            class="badge bg-label-secondary"> 31 Dec 2024</span></a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 
-                        </td>
-                    </tr>
-                                </tbody>
-            </table>
-        </div>
-    </div>
 
 
                     </div>
@@ -683,7 +657,7 @@
                 if (Sheets_count) {
                     Sheets.start({
                         precision: 'seconds',
-                        startValues: {seconds: 333}
+                        startValues: {seconds: 108}
                     });
                     Sheets.addEventListener('secondsUpdated', function () {
                         Sheets_count.innerHTML = Sheets.getTimeValues().toString();
@@ -695,5 +669,5 @@
     </script>
 </body>
 
-<!-- Mirrored from studybuddy.CollegeConnect.com/app/assignment-list by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:51:36 GMT -->
+<!-- Mirrored from studybuddy.CollegeConnect.com/app/assignments by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 10:46:39 GMT -->
 </html>
