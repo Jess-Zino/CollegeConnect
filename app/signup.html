@@ -132,32 +132,114 @@
               </form>
 
               <div class=" my-3 step-2" style="display: none;">
-                <h3>Select Courses</h3>
+                <h3 style="text-align:center">Select Courses</h3>
                 <form action="classroom.html">
+                    <div class="d-flex" style="justify-content:space-evenly;">
                     <div>
-                        <input type="checkbox"id="gec117" name="courses" value="GEC 117">
-                        <label for="eie511"> GEC 117</label><br>
+                        <h4>Alpha Courses</h4>
+                        <div>
+                            <input type="checkbox"id="gec117" name="courses" value="GEC 117">
+                            <label for="gec117"> GEC 117</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="tch111" name="courses" value="TCH 111">
+                            <label for="tch111"> TCH 111</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="ent111" name="courses" value="ENT 111">
+                            <label for="ent111"> ENT 111</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="gst111" name="courses" value="GST 111">
+                            <label for="gst111"> GST 111</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="gst112" name="courses" value="GST 112">
+                            <label for="gst112"> GST 112</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="phy111" name="courses" value="PHY 111">
+                            <label for="phy111"> PHY 111</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="phy112" name="courses" value="PHY 112">
+                            <label for="phy112"> PHY 112</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="mth112" name="courses" value="MTH 112">
+                            <label for="mth112"> MTH 112</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="tmc111" name="courses" value="TMC 111">
+                            <label for="tmc111"> TMC 111</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="chm111" name="courses" value="CHM 111">
+                            <label for="chm111"> CHM 111</label><br>
+                        </div>
                     </div>
+
                     <div>
-                        <input type="checkbox"id="eie111" name="courses" value="EIE 111">
-                        <label for="eie511"> EIE 111</label><br>
+                        <h4>Omega Courses</h4>
+                        <div>
+                            <input type="checkbox"id="phy121" name="courses" value="PHY 121">
+                            <label for="phy121"> PHY 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="phy122" name="courses" value="PHY 122">
+                            <label for="phy122"> PHY 122</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="chm121" name="courses" value="CHM 121">
+                            <label for="chm121"> CHM 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="chm123" name="courses" value="CHM 123">
+                            <label for="chm123"> CHM 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="ent121" name="courses" value="ENT 121">
+                            <label for="ent121"> ENT 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="gst121" name="courses" value="GST 121">
+                            <label for="gst121"> GST 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="gst122" name="courses" value="GST 122">
+                            <label for="gst122"> GST 122</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="phy111" name="courses" value="PHY 111">
+                            <label for="eie511"> PHY 111</label><br>
+                        </div>
+                        <!-- <div>
+                            <input type="checkbox"id="cst121" name="courses" value="CST 121">
+                            <label for="cst121"> CST 121</label><br>
+                        </div> -->
+                        <div>
+                            <input type="checkbox"id="mth123" name="courses" value="MTH 123">
+                            <label for="mth123"> MTH 123</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="tmc121" name="courses" value="TMC 121">
+                            <label for="tmc121"> TMC 121</label><br>
+                        </div>
+                        <!-- <div>
+                            <input type="checkbox"id="sts121" name="courses" value="STS 121">
+                            <label for="sts121"> STS 121</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox"id="tch121" name="courses" value="TCH 121">
+                            <label for="tch121"> TCH 121</label><br>
+                        </div> -->
                     </div>
-                    <div>
-                        <input type="checkbox"id="cen 111" name="courses" value="CEN 111">
-                        <label for="eie511"> CEN 111</label><br>
-                    </div>
-                    <div>
-                        <input type="checkbox"id="gst111" name="courses" value="GST 111">
-                        <label for="eie511"> EIE 511</label><br>
-                    </div>
-                    <div>
-                        <input type="checkbox"id="phy111" name="courses" value="PHY 111">
-                        <label for="eie511"> PHY 111</label><br>
-                    </div>
+                </div>
+                    
                     <button type="button" class="btn text-white btn-lg d-grid w-100 mt-4"
                                   style="background-image: linear-gradient(60deg, #4778f5, #74d5be);"
                                   onclick="addClassess()" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD CLASSESS</button>
-                     <!--MODAL  -->
+                     <!-- MODAL  -->
                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">

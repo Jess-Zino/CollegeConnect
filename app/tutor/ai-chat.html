@@ -216,11 +216,11 @@
                                                    class="menu-link">Create Quiz </a>
                                             </li>
                                             <li class="menu-item ">
-                                                <a href="ai-chat.html"
+                                                <a href="tutor-student-chat.html"
                                                    class="menu-link">Chat with student</a>
                                             </li>
                                             <li class="menu-item ">
-                                                <a href="spreadsheets.html"
+                                                <a href="tutor-student-progess.html"
                                                    class="menu-link">Student Progress </a>
                                             </li>
                                         </ul>
@@ -348,7 +348,7 @@
                 <div class=" p-2 card-body-messages">
                     <div class="d-flex mb-4 pb-1 p-1">
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <p class="fw-bold">Tutors</p>
+                            <p class="fw-bold">Students</p>
                             <div class="user-progress">
                                 <a href="ai-chat.html" class=" text-end btn w-60 btn-rounded btn-dark mb-3"><i
                                             class="bi bi-plus-lg"></i> Find a Student</a>
@@ -359,61 +359,61 @@
                     <ul class="p-0 m-0">
 
                         <label>
-                            <input type="radio" name="chat" value="Liam P." onchange="updateTutorName(this)">
+                            <input type="radio" name="chat" value="Chimamanda Okeke" onchange="updateTutorName(this)">
                          
                               <div class="d-flex mb-4 pb-1 p-1">
                                 <div class="avatar flex-shrink-0 me-3">
-                                  <span class="avatar-initial rounded bg-warning text-white">L</span>
+                                  <span class="avatar-initial rounded bg-warning text-white">CO</span>
                                 </div>
                                 <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                   <div class="me-2">
-                                    <h6 class="mb-0"> Liam P.</h6>
-                                    <small class="text-muted"> GEC117</small>
+                                    <h6 class="mb-0"> Chimamanda Okeke</h6>
+                                    <small class="text-muted"> GEC117, TMC111</small>
                                   </div>
                                 </div>
                               </div>
                           </label>
                         <label>
-                          <input type="radio" name="chat" value="Judas Ogbe" onchange="updateTutorName(this)">
+                          <input type="radio" name="chat" value="Emeka Adeniyi" onchange="updateTutorName(this)">
                        
                             <div class="d-flex mb-4 pb-1 p-1">
                               <div class="avatar flex-shrink-0 me-3">
-                                <span class="avatar-initial rounded bg-warning text-white">D</span>
+                                <span class="avatar-initial rounded bg-warning text-white">EA</span>
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
-                                  <h6 class="mb-0"> Judas Ogbe</h6>
-                                  <small class="text-muted"> GEC117</small>
+                                  <h6 class="mb-0"> Emeka Adeniyi</h6>
+                                  <small class="text-muted"> MTH111, MTH112</small>
                                 </div>
                               </div>
                             </div>
                         </label>
                       
                         <label>
-                          <input type="radio" name="chat" value="Kiton Adeyemi" onchange="updateTutorName(this)">
+                          <input type="radio" name="chat" value="Amaka Musa" onchange="updateTutorName(this)">
                             <div class="d-flex mb-4 pb-1 p-1">
                               <div class="avatar flex-shrink-0 me-3">
-                                <span class="avatar-initial rounded bg-primary text-white">A</span>
+                                <span class="avatar-initial rounded bg-primary text-white">AM</span>
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
-                                  <h6 class="mb-0"> Kiton Adeyemi</h6>
-                                  <small class="text-muted"> CEN111</small>
+                                  <h6 class="mb-0"> Amaka Musa</h6>
+                                  <small class="text-muted"> GST111, GST112</small>
                                 </div>
                               </div>
                             </div>
                         </label>
                       
                         <label>
-                          <input type="radio" name="chat" value="Miracle Oseme" onchange="updateTutorName(this)">
+                          <input type="radio" name="chat" value="Oluwatobi Olamide" onchange="updateTutorName(this)">
                             <div class="d-flex mb-4 pb-1 p-1">
                               <div class="avatar flex-shrink-0 me-3">
-                                <span class="avatar-initial rounded bg-secondary text-white">B</span>
+                                <span class="avatar-initial rounded bg-secondary text-white">OO</span>
                               </div>
                               <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                                 <div class="me-2">
-                                  <h6 class="mb-0"> Miracle Oseme</h6>
-                                  <small class="text-muted"> EIE111</small>
+                                  <h6 class="mb-0"> Oluwatobi Olamide</h6>
+                                  <small class="text-muted"> PHY111, PHY112</small>
                                 </div>
                               </div>
                             </div>
@@ -421,11 +421,11 @@
                       
                         <!-- Repeat similarly for other chat items -->
                       
-                      </ul>
+                    </ul>
                       <script>
                         function updateTutorName(radio) {
                           // Update the tutor name based on the selected chat's radio button value
-                          document.getElementById("tutornNme").innerText = radio.value || "Liam P.";
+                          document.getElementById("tutornNme").innerText = radio.value || "Emeka Adeniyi";
                         }
                       </script>
                       
@@ -441,11 +441,11 @@
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-3">
                                         <div class="avatar">
-                                            <span class="app-avatar-text bg-info-gradient text-white">JP</span>
+                                            <span class="app-avatar-text bg-info-gradient text-white">EA</span>
                                         </div>
                                     </div>
                                     <div class="ms-3">
-                                        <h6 class="mb-0 d-block  fw-bolder text-dark" id="tutornNme">Liam P</h6>
+                                        <h6 class="mb-0 d-block  fw-bolder text-dark" id="tutornNme">Emeka Adeniyi</h6>
                                         <small class="text-muted">2024-10-19</small>
 
 
