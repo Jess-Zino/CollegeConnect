@@ -72,7 +72,13 @@
                   <div class="step-1">
                       <div class="mb-3">
                           <label for="school" class="form-label">School</label>
-                          <input type="text" class="form-control" id="school" name="school" required />
+                          <select class="form-control" id="school" name="school" required>
+                            <option value="">Select Your School</option>
+                            <option value="landmark">Landmark University</option>
+                            <option value="redeemers">Redeemer's University</option>
+                            <option value="biu">Benson Idahosa University</option>
+                            <option value="unilag">University of Lagos</option>
+                        </select>
                       </div>
               
                       <div class="mb-3">
@@ -81,13 +87,27 @@
                       </div>
                       
                       <div class="mb-3">
-                        <label for="student-email" class="form-label">Level</label>
-                        <input type="email" class="form-control" id="student-email" name="student_email" required />
+                        <label for="level" class="form-label">Level</label>
+                        <select class="form-control" id="level" name="level" required>
+                            <option value="">Select Your Level</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                        </select>
                       </div>
-                      <div class="mb-3">
-                        <label for="student-email" class="form-label">Programme</label>
-                        <input type="email" class="form-control" id="student-email" name="student_email" required />
-                      </div>
+                        <div class="mb-3">
+                            <label for="programme" class="form-label">Programme</label>
+                            <select class="form-control" id="programme" name="programme" required>
+                                <option value="">Select Your Programme</option>
+                                <option value="eie">Electrical & Information Engineering</option>
+                                <option value="compScience">Computer Science</option>
+                                <option value="microbiology">Microbiolgy</option>
+                                <option value="biochem">Biochemistry</option>
+                                <option value="busAdmin">Business Administration</option>
+                            </select>
+                          </div>
               
                       <div class="mb-3">
                           <label for="phone" class="form-label">Phone Number</label>
@@ -213,10 +233,10 @@
                             <input type="checkbox"id="phy111" name="courses" value="PHY 111">
                             <label for="eie511"> PHY 111</label><br>
                         </div>
-                        <!-- <div>
+                        <div>
                             <input type="checkbox"id="cst121" name="courses" value="CST 121">
                             <label for="cst121"> CST 121</label><br>
-                        </div> -->
+                        </div>
                         <div>
                             <input type="checkbox"id="mth123" name="courses" value="MTH 123">
                             <label for="mth123"> MTH 123</label><br>
