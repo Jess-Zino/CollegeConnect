@@ -98,7 +98,7 @@
                             </a>
                         </li>
                     
-                                            <li class="menu-item active">
+                                            <li class="menu-item">
                             <a href="assignments.html" class="menu-link">
                                 <i class="text-success menu-icon bi bi-journal-text"></i>Assignments
                             </a>
@@ -186,7 +186,7 @@
                                 <a href="tutor-create-assignment.html"
                                    class="menu-link">Create Assignments </a>
                             </li>
-                            <li class="menu-item ">
+                            <li class="menu-item active">
                                 <a href="create-quiz.html"
                                    class="menu-link">Create Quiz </a>
                             </li>
@@ -195,7 +195,7 @@
                                    class="menu-link">Chat with student</a>
                             </li>
                             <li class="menu-item ">
-                                <a href="spreadsheets.html"
+                                <a href="tutor-student-progess.html"
                                    class="menu-link">Student Progress </a>
                             </li>
                         </ul>
@@ -358,9 +358,8 @@
                     
 
                         <input type="hidden" name="_token" value="OGpnEwoPy9Hl7sJ6V1M8Kle90vybbI0Jd1AwoPkv">                                                <div class="d-flex mt-4">
-                            <button type="submit" id="btn-save-project" class="btn btn-primary
-                             m-0 ">
-                                Save
+                            <button type="submit" id="btn-save-project" class="btn btn-primary mt-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Add Question
                             </button>
                         </div>
                     </div>
@@ -368,23 +367,37 @@
             </form>
         </div>
     </div>
-    <div class="modal fade" id="modal_ask_ai_to_write">
+    <!-- SET QUESTIONS  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5">Ask AI to Write</h1>
+                    <button class="btn btn-dark mt-3" disabled>Ask AI to Write</button>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-
-                    <div class="mb-3">
-                        <label for="input_ai_content">What would you like me to write?</label>
-                        <input type="text" class="form-control" required id="input_ai_content"
-                               placeholder="Ask me anything..." name="content">
+                    <div class="form-group mt-3">
+                        <label for="example-text-input"
+                               class="form-control-label form-label">Question</label><span
+                                class="text-danger">*</span>
+                        <input class="form-control" name="title" type="text" id="title"
+                               >
+                    </div>
+                    
+                    <div class="form-group mt-3">
+                        <label for="example-text-input"
+                               class="form-control-label form-label">Options</label><span
+                                class="text-danger">*</span><br>
+                    </div>
+                    <div class="pb-2">
+                        <input type="radio" class="" name="title" id="title"><input  type="text" placeholder="Option 1" style="margin-left:2px;border:none; border-bottom: 2px solid rgb(170, 170, 170);"><br>
+                        
+                    </div>
+                    <div>
+                        <input type="radio" class="" name="title" id="title"> <span>Add option</span>
                     </div>
 
-                    <button type="submit" class="btn btn-primary" id="btn-ask-ai-to-write">Write</button>
+                    <button type="submit" class="btn btn-primary mt-4" id="btn-ask-ai-to-write">Save</button>
 
 
                 </div>
